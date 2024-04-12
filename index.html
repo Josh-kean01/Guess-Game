@@ -27,7 +27,7 @@
 </head>
 
 <body class="d-flex justify-content-center container-fluid vh-100 align-items-center">
-    <div class="text-light bg-dark rounded-3 p-4 shadow">
+    <div class="text-light bg-dark rounded-3 p-4 shadow d-inline" style="max-width: 500px;">
         <div class="row">
             <div class="col-12">
                 <h1 class="fw-medium">Guess My Number Game!</h1>
@@ -36,7 +36,7 @@
             <div class="d-flex col-12">
                 <input class="form-control me-2" type="number" id="userGuess" placeholder="Enter Your Guess"
                     aria-label="Search">
-                <button class="btn btn-outline-primary" id="submitGuess" onclick="checkGuess()" disabled>Guess</button>
+                <button class="btn btn-outline-primary px-3 fw-medium" id="submitGuess" onclick="checkGuess()" disabled>Guess</button>
             </div>
             <div class="col-12 py-2">
                 <p class="my-2 text-success" id="result"></p>
@@ -44,9 +44,9 @@
                 <p class="my-2" id="highestScore"></p>
             </div>
             <div class="d-flex gap-2 col-12">
-                <button class="btn btn-primary  w-100" type="button" onclick="playAgain()">Play Again</button>
-                <button class="btn btn-primary  w-100" type="button" onclick="increaseLevel()">level ++</button>
-                <button class="btn btn-primary  w-100" type="button" onclick="exitGame()">Exit Game</button>
+                <button class="btn btn-primary px-3 w-100" type="button" onclick="playAgain()">Play Again</button>
+                <button class="btn btn-primary px-3 w-100" type="button" onclick="increaseLevel()">level ++</button>
+                <button class="btn btn-primary px-3 w-100" type="button" onclick="exitGame()">Exit Game</button>
             </div>
         </div>
     </div>
